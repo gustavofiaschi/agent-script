@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 1.25rem 10rem;
+    background-color: cadetblue;
+}
+
+h1 {
+    text-align: center;    
+}
+
+#customer-details {
+    display: grid;
+    margin-bottom: 1.25rem;
+    background-color: aliceblue;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.main-grid-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;    
+
+    & label {
+        font-size: 0.85rem;
+    }
+}
+
+.cells {
+    display: grid;
+}
+
+#call-script {
+    margin-bottom: 1.25rem;
+    background-color: aliceblue;
+    border-radius: 1rem;
+    padding: 1rem;
+
+    & p {
+        font-size: 0.85rem;
+    }
+
+    & h3 {
+        margin: 0;
+    }
+}
+
+#data-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 1.25rem;
+    font-size: 0.85rem;
+    background-color: azure;
+}
+
+#data-table th, #data-table td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+#data-table th {
+    background-color: #f2f2f2;
+}        
+
+.td-link {
+    cursor: pointer;
+}
+        

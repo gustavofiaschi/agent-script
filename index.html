@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Customer Information</title>
+        <link rel="stylesheet" href="./css/mystyle.css">
+        <script type="text/javascript" src="./js/page-logic.js"></script>     
+    </head>
+    <body>
+
+        <h1>Compaign FT</h1>
+        <!-- Customer Details Section -->
+        <div id="customer-details">            
+            <div class="main-grid-form">
+                <div class="cells">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" onchange="saveData('firstName', this.value)">
+                </div>
+
+                <div class="cells">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" onchange="saveData('lastName', this.value)">
+                </div>                
+                
+                <div class="cells">
+                    <label for="city">City:</label>
+                    <input type="text" id="city" onchange="saveData('city', this.value)">
+                </div>
+            </div>
+            <div class="main-grid-form">
+                <div class="cells">
+                    <label for="state">State:</label>
+                    <input type="text" id="state" onchange="saveData('state', this.value)">
+                </div>
+                <div class="cells">
+                    <label for="zip">Zip:</label>
+                    <input type="text" id="zip" onchange="saveData('zip', this.value)">
+                </div>
+                <div class="cells">
+                    <label for="companyName">Company Name:</label>
+                    <input type="text" id="companyName" onchange="saveData('companyName', this.value)">
+                </div>
+            </div>
+        </div>
+
+        <!-- Call Script Section -->
+        <div id="call-script">
+            <h3>Intro</h3>
+            <p>Agent: Hello and thank you for calling <b>FIASCHI TECHNOLOGY</b>!</p>
+            <p>My name is <b>Gustavo</b>, and I'm here to assist you today. May I have the pleasure of knowing whom</p>
+            <p>I'm speaking with?</p>            
+            <p>Customer: Hi, I'm <b><span id="customerName1">[Anonymous].</span></b></p>            
+            <p>Agent: Thank you, <b><span id="customerName2">[Anonymous].</span>!</b> How can I assist you today? Is there something specific you're looking for or need help with?</p>            
+            <p>Customer: Hi, I have a question about [Product/Service].</p>
+        </div>
+
+        <!-- Data Table Section -->
+        <div id="data-table">            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Description</th>
+                        <th>Type</th>
+                        <th>Topics</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body"></tbody>
+            </table>
+        </div>
+    </body>
+</html>
+
